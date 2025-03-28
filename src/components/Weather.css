@@ -1,0 +1,104 @@
+.weather {
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #bf8d8d, var(--bg-color, #2780e7)); /* Default color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap:12px;
+} 
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #861515;
+    background: #f5f7f9;
+    font-size: 18px;
+}
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #e6e6e6;
+    cursor: pointer;
+
+}
+.weather-icon{
+    width: 150px;
+    margin: 30px 0;
+}
+.temperature{
+    color:#fff;
+    font-size: 80px;
+    line-height: 1;
+}
+.location{
+    color:#fff;
+    font-size: 40px;
+}
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display:flex;
+    justify-content: space-between;
+}
+.weather-data .col{
+    display: flex;
+    align-items:flex-start;
+    gap:12px;
+    font-size: 22px;
+}
+.weather-data .col span{
+    display: block;
+    font-size: 16px;
+}
+.weather-data .col img{
+    width: 26px;
+    margin-top: 10px;
+}
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .weather {
+      width: 90%; /* Make it more fluid */
+      padding: 15px;
+    }
+    .search-bar {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: white;
+        padding: 8px 12px;
+        border-radius: 20px;
+      }
+      .search-bar input {
+        height: 30px;
+        width: 125px;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        padding-left: 25px;
+        color: #861515;
+        background: #f5f7f9;
+        font-size: 13px;
+      }
+      
+      .search-bar img {
+        width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #e6e6e6;
+    cursor: pointer;
+      }
+  }
+  
